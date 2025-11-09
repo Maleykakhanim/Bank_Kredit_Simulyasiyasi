@@ -64,5 +64,6 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 ## 👩‍💻 Layihə müəllifi  
 **Məleykəxanım Rəfiyeva**   
 💡 Layihədə məlumat analizi, vizuallaşdırma və Python bacarıqları ön plandadır.
+
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Maleykakhanim/Bank_Kredit_Simulyasiyasi)
 
