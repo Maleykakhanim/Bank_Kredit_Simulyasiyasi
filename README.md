@@ -1,0 +1,1 @@
+# Bank_Kredit_Simulyasiyasi
