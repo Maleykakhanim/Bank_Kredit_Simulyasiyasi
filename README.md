@@ -11,14 +11,14 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 
 ---
 
-## ⚙️ İstifadə olunan mühit və fayllar  
+## İstifadə olunan mühit və fayllar  
 - ☁️ Layihə **Google Colab** mühitində işlənilib (interaktiv notebook formatında).  
 - 💻 Kod faylı: `Bank_Kredit_Simulyasiyasi_proyekt.ipynb`  
 - 📂 Məlumat faylı: müştəri məlumatlarını ehtiva edən `*.csv` faylı (CSV formatında)  
 
 ---
 
-## 🧩 Xüsusiyyətlər və funksionallıq  
+## Xüsusiyyətlər və funksionallıq  
 - 📥 CSV faylından müştəri məlumatlarının yüklənməsi və ilkin təhlili  
 - 🧹 Məlumatların təmizlənməsi və hazırlanması (məs: boş dəyərlərin tamamlanması, kateqorik dəyişənlərin kodlaşdırılması)  
 - 💰 Gəlir, borc, kredit tarixi kimi dəyişənlər əsasında kredit riskinin analizi  
@@ -27,7 +27,7 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 
 ---
 
-## 🧠 İstifadə qaydası  
+## İstifadə qaydası  
 1️⃣ Colab notebook-u aç:  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ao1IOmn5VKKCIpVO9USz3nX4QGOduboL)
 
@@ -43,7 +43,7 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 
 ---
 
-## 🧰 Texnologiyalar və əsas kitabxanalar  
+## Texnologiyalar və əsas kitabxanalar  
 -  **Python 3**  
 -  **pandas** — məlumatların emalı  
 -  **numpy** — riyazi hesablamalar  
@@ -52,12 +52,12 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 
 ---
 
-## 🚀 Gələcək genişləndirmə imkanları  
-- 🤖 Kredit götürmə ehtimalının proqnozlaşdırılması üçün **maşın öyrənməsi modelləri** (lojistik reqressiya, decision tree və s.)  
-- 📉 Model qiymətləndirmə (accuracy, precision, recall və s.)  
-- 📊 **Interaktiv dashboard** (məs: Streamlit və ya Dash ilə)  
-- 🌍 Əlavə məlumat mənbələri (məs: makroiqtisadi göstəricilər)  
-- 🔌 **API inteqrasiyası** ilə real-vaxt analitik sistem  
+## Gələcək genişləndirmə imkanları  
+- Kredit götürmə ehtimalının proqnozlaşdırılması üçün **maşın öyrənməsi modelləri** (lojistik reqressiya, decision tree və s.)  
+- Model qiymətləndirmə (accuracy, precision, recall və s.)  
+- **Interaktiv dashboard** (məs: Streamlit və ya Dash ilə)  
+- Əlavə məlumat mənbələri (məs: makroiqtisadi göstəricilər)  
+- **API inteqrasiyası** ilə real-vaxt analitik sistem  
 
 ---
 
