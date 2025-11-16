@@ -7,7 +7,8 @@
 
 ## 🎯 Layihənin məqsədi  
 Bu layihə bank müştərilərinin demoqrafik və maliyyə göstəricilərini analiz edərək onların kredit götürmə ehtimalını və kredit risk səviyyəsini müəyyənləşdirməyi hədəfləyir.
-📊 Məqsəd — müştərilərin maliyyə vəziyyətini analiz edərək bank üçün **kredit riskini azaltmaq** və **qərar-veriş prosesini dəstəkləməkdir.**
+
+Məqsəd — müştərilərin maliyyə vəziyyətini analiz edərək bank üçün **kredit riskini azaltmaq** və **qərar-veriş prosesini dəstəkləməkdir.**
 
 ---
 
@@ -91,6 +92,7 @@ Bu layihə bank müştərilərinin demoqrafik və maliyyə göstəricilərini an
 💡 Layihədə məlumat analizi, vizuallaşdırma və Python bacarıqları ön plandadır.
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Maleykakhanim/Bank_Kredit_Simulyasiyasi)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/maleykakhanim-rafiyeva/)
 
 
