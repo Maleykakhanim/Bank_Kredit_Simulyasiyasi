@@ -1,12 +1,12 @@
-# 🏦 Bank Kredit Simulyasiyası
+# 🏦 Bank Kredit Analizi
 
 ## 🧾 Layihənin adı  
-**Bank Kredit Simulyasiyası**
+**Bank Kredit Analizi**
 
 ---
 
 ## 🎯 Layihənin məqsədi  
-Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə ehtimalını** və ya **kreditin ödənmə qabiliyyətini** modelləşdirməyi hədəfləyir.  
+Bu layihə bank müştərilərinin demoqrafik və maliyyə göstəricilərini analiz edərək onların kredit götürmə ehtimalını və kredit risk səviyyəsini müəyyənləşdirməyi hədəfləyir.
 📊 Məqsəd — müştərilərin maliyyə vəziyyətini analiz edərək bank üçün **kredit riskini azaltmaq** və **qərar-veriş prosesini dəstəkləməkdir.**
 
 ---
@@ -19,11 +19,11 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 ---
 
 ## Xüsusiyyətlər və funksionallıq  
-- 📥 CSV faylından müştəri məlumatlarının yüklənməsi və ilkin təhlili  
-- 🧹 Məlumatların təmizlənməsi və hazırlanması (məs: boş dəyərlərin tamamlanması, kateqorik dəyişənlərin kodlaşdırılması)  
-- 💰 Gəlir, borc, kredit tarixi kimi dəyişənlər əsasında kredit riskinin analizi  
-- 📈 Sadə statistik ölçülərin hesablanması  
-- 🎨 Vizuallaşdırma (məs: gəlir və borc paylanması, kredit statusuna görə qruplaşma)  
+-  CSV faylından müştəri məlumatlarının yüklənməsi və ilkin təhlili  
+-  Məlumatların təmizlənməsi və hazırlanması (məs: boş dəyərlərin tamamlanması, kateqorik dəyişənlərin kodlaşdırılması)  
+-  Gəlir, borc, kredit tarixi kimi dəyişənlər əsasında kredit riskinin analizi  
+-  Sadə statistik ölçülərin hesablanması  
+-  Vizuallaşdırma (məs: gəlir və borc paylanması, kredit statusuna görə qruplaşma)  
 
 ---
 
@@ -34,21 +34,46 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 2️⃣ Lazımi kitabxanaları yüklə (`pandas`, `numpy`, `matplotlib`, `seaborn`)  
 3️⃣ `*.csv` faylını yüklə və notebook-a bağla  
 4️⃣ Kod hissələrini ardıcıl icra et:  
-   - 📊 Məlumatların oxunması və ilkin təhlili  
-   - 🧹 Məlumatların təmizlənməsi  
-   - 📈 Analiz və vizuallaşdırma  
-   - ✅ Yekun nəticələrin çıxarılması
+   -  Məlumatların oxunması və ilkin təhlili  
+   -  Məlumatların təmizlənməsi  
+   -  Analiz və vizuallaşdırma  
+   -  Yekun nəticələrin çıxarılması
 
 5️⃣ Əlavə analizlər və vizuallaşdırmalar etmək istəyirsənsə, notebook-u uyğunlaşdıraraq genişləndirə bilərsən.  
 
 ---
 
-## Texnologiyalar və əsas kitabxanalar  
--  **Python 3**  
--  **pandas** — məlumatların emalı  
--  **numpy** — riyazi hesablamalar  
--  **matplotlib** — əsas vizuallaşdırma  
--  **seaborn** — statistik vizuallaşdırma  
+## Layihə aşağıdakı texnologiyalar və Python kitabxanaları üzərində qurulub:
+
+- **Python 3**: Əsas proqramlaşdırma dili.
+- **Pandas**: Məlumatların emalı və analizi.
+- **NumPy**: Riyazi və statistik hesablamalar.
+- **Matplotlib & Seaborn**: Məlumatların vizuallaşdırılması.
+- **Google Colab**: Layihənin işləndiyi interaktiv mühit.
+
+---
+## Dataset Sütunlarının İzahı
+
+| Sütun adı              | İzahı                                                                     |
+|------------------------|----------------------------------------------------------------------     |
+| MüştəriID              | Hər bir müştəriyə aid unikal identifikasiya nömrəsi                       |
+| AdSoyad                | Müştərinin tam adı                                                        |
+| DoğumTarixi            | Müştərinin doğum tarixi                                                   |
+| Cins                   | Müştərinin cinsi (Kişi/Qadın)                                             |
+| TəhsilSəviyyəsi        | Müştərinin təhsil səviyyəsi (Məktəb, Bakalavr, Magistr və s.)             |   
+| MəşğulluqStatusu       | İş vəziyyəti (İşləyir, İşsiz, Tələbə)                                     |
+| AylıqGəlir             | Müştərinin aylıq gəliri (AZN və ya digər valyuta)                         |
+| KreditNövü             | Müştərinin götürmək istədiyi kredit növü (İstehlak, Avto, Ev və s.)       |
+| KreditMəbləği          | Kreditin məbləği                                                          |
+| KreditMəqsədi          | Kreditin məqsədi (Avtomobil, Ev, Təhsil və s.)                            |
+| FaizDərəcəsi           | Kreditin illik faiz dərəcəsi (%)                                          |
+| KreditSkoru            | Müştərinin kredit tarixçəsinə əsasən hesablanan skor                      |
+| DigərKreditlərinSayı   | Müştərinin digər mövcud kreditlərinin sayı                                |
+| KeçmişdəGecikmə        | Müştərinin əvvəlki kredit ödənişlərində gecikmə olub-olmaması (Bəli/Xeyr) |
+| QaraSiyahida           | Müştərinin qara siyahıda olub-olmaması (Bəli/Xeyr)                        |
+| MüraciətStatusu        | Kredit müraciətinin nəticəsi (Təsdiqləndi/Qəbul edilmədi)                 |
+| YoxlayıcınınQeydləri   | Bank əməkdaşlarının əlavə qeydləri və müşahidələri                        |
+
 
 ---
 
@@ -66,4 +91,6 @@ Bu layihə bank müştərilərinin məlumatları əsasında **kredit götürmə 
 💡 Layihədə məlumat analizi, vizuallaşdırma və Python bacarıqları ön plandadır.
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Maleykakhanim/Bank_Kredit_Simulyasiyasi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/maleykakhanim-rafiyeva/)
+
 
